@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowser" parallel ="tests" thread-count = "3">
+  <test  name="ChromeBrowser">
+	  <parameter name = "browser" value = "chome"/>
+	     <classes>
+      <class name="hrms.testcases.MyTimesheetTest"/>
+    </classes>
+  </test> <!-- Test -->
+
+    <test  name="IEBrowser">
+	  <parameter name = "browser" value = "IE"/>
+	     <classes>
+      <class name="hrms.testcases.MyTimesheetTest"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test  name="FireFoxBrowser">
+	  <parameter name = "browser" value = "FireFox"/>
+	     <classes>
+      <class name="hrms.testcases.MyTimesheetTest"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeBrowser(failed)">
+    <parameter name="browser" value="chome"/>
+    <classes>
+      <class name="hrms.testcases.MyTimesheetTest">
+        <methods>
+          <include name="my_time_sheet"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- hrms.testcases.MyTimesheetTest -->
+    </classes>
+  </test> <!-- ChromeBrowser(failed) -->
+  <test thread-count="5" name="IEBrowser(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="hrms.testcases.MyTimesheetTest">
+        <methods>
+          <include name="my_time_sheet"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- hrms.testcases.MyTimesheetTest -->
+    </classes>
+  </test> <!-- IEBrowser(failed) -->
+  <test thread-count="5" name="FireFoxBrowser(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="hrms.testcases.MyTimesheetTest">
+        <methods>
+          <include name="my_time_sheet"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- hrms.testcases.MyTimesheetTest -->
+    </classes>
+  </test> <!-- FireFoxBrowser(failed) -->
+</suite> <!-- Failed suite [CrossBrowser] -->
